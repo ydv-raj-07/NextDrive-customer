@@ -2,10 +2,11 @@ workflows:
   build-android:
     name: Build Android APK
     environment:
-      flutter: stable
+      flutter: 3.16.0
     scripts:
       - name: Install dependencies
         script: |
+          flutter --version
           flutter pub get
       - name: Build unsigned release APK
         script: |

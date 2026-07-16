@@ -1,0 +1,94 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+.buildlog
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+Flutter.framework/
+Generated.xcconfig
+
+# Build outputs
+build/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# iOS
+Pods/
+Podfile.lock
+Flutter/Flutter.framework
+Flutter/Flutter.podspec
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad
+*.xcuserdata/
+*.moved-aside
+*.ipa
+
+# Android
+*.apk
+*.aar
+*.jks
+.gradle/
+/local.properties
+/android/local.properties
+**/local.properties
+
+# macOS
+*.xcconfig
+
+# Assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.heic
+*.webp
+*.tiff
+
+# VS Code
+.vscode/
+
+# Generated files
+pubspec.lock
+
+# Misc
+*.log
+*.tmp
+*.temp
+*.swp
+*.DS_Store
+
+# Firebase
+google-services.json
+**/google-services.json
+
+# Keystore
+*.jks
+*.keystore
+key.properties
+
+# Profiles
+*.mobileprovision
+
+# Others
+*.class
+*.jar
+*.war
+*.ear
+
+# Linux
+**/CMakeFiles/
+**/Makefile
+**/cmake_install.cmake
+**/build/
+
+# Windows
+**/flutter_*.syms
+
+# Web
+**/packages/

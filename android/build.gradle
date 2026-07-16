@@ -9,6 +9,9 @@ allprojects {
                 artifact()
             }
         }
+        flatDir {
+            dirs "$rootDir/libs"
+        }
     }
 }
 

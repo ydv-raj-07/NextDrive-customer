@@ -7,25 +7,8 @@ workflows:
       - name: Install dependencies
         script: |
           flutter pub get
-      - name: Configure Android signing
-        script: |
-          if [ -n "$KEYSTORE_BASE64" ]; then
-            echo "$KEYSTORE_BASE64" | base64 --decode > android/keystore.jks
-            cat > android/key.properties <<EOF
-storePassword=$KEYSTORE_PASSWORD
-keyPassword=$KEY_PASSWORD
-keyAlias=$KEY_ALIAS
-storeFile=keystore.jks
-EOF
-          else
-            echo "No KEYSTORE_BASE64 provided; building unsigned release APK."
-          fi
-      - name: Build release APK
+      - name: Build unsigned release APK
         script: |
           flutter build apk --release
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-    publishing:
-      email:
-        recipients:
-          - your-email@example.com
